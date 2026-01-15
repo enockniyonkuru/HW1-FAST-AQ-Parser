@@ -1,7 +1,7 @@
 [build-system]
 requires = [
 	"flit_core >=3.2,<4",
-	"python_version >= '3.7'"
+	"python >=3.7"
 	]
 build-backend = "flit_core.buildapi"
 
@@ -12,14 +12,15 @@ pythonpath = [
 
 [project]
 name = "seqparser"
-authors = [{name = "Han Chen", email = "han.chen@ucsf.edu"}]
+authors = [{name = "Enock Niyonkuru", email = "enock.niyonkuru@ucsf.edu"}]
 readme = "README.md"
 license = {file = "LICENSE"}
 classifiers = ["License :: OSI Approved :: MIT License"]
 dynamic = ["version", "description"]
-dependencies = [
-    "pytest"
-]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest"]
 
 [project.urls]
-Home = "https://github.com/BMI203-2024/HW1-FAST-AQ-Parser.git"
+Home = "https://github.com/enockniyonkuru/HW1-FAST-AQ-Parser.git"
